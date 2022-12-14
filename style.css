@@ -28,6 +28,7 @@ main {
     place-items: center;
     transition: all 0.25s ease-in-out;
     text-align: center;
+    background-color: blanchedalmond;
   }
   .slide-img {
     height: 100%;
@@ -35,6 +36,18 @@ main {
   }
   .slide h1 {
     font-size: 5rem;
+    background-image: linear-gradient(blue,green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: blink 2s ease-in-out infinite;
+  }
+  @keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+  }
+  .text{
+    background-image: linear-gradient(skyblue,lightseagreen);
   }
   
   .btn-container {
